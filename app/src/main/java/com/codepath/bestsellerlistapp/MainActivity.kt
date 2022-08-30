@@ -3,6 +3,7 @@ package com.codepath.bestsellerlistapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.codepath.bestsellerlistapp.R.id
+import org.json.JSONObject
 
 /**
  * The MainActivity for the BestSellerList app.
@@ -15,5 +16,8 @@ class MainActivity : AppCompatActivity() {
         val supportFragmentManager = supportFragmentManager
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(id.content, BestSellerBooksFragment(), null).commit()
+
+
+
     }
 }
